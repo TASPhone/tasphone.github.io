@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASPhone - Repara y Recicla</title>
+    <title>TASPhone - Reparación y Reciclaje</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,125 +12,98 @@
             background-color: #f4f4f4;
         }
         header {
-            background: linear-gradient(to right, #007bff, #ff0000, #008000);
+            background: linear-gradient(to right, blue, red, green);
+            color: white;
             text-align: center;
             padding: 20px;
-            color: white;
+            position: relative;
         }
-        header img {
-            width: 150px;
-            display: block;
-            margin: 0 auto 10px;
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            height: 60px;
         }
         nav {
-            background: #222;
-            padding: 10px;
             text-align: center;
+            padding: 10px;
+            background: #ddd;
         }
         nav a {
-            color: white;
-            text-decoration: none;
             margin: 0 15px;
-            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
         }
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
+        section {
             padding: 20px;
+        }
+        .servicio {
             background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        .service {
-            background: #f0f0f0;
             padding: 15px;
-            margin-bottom: 15px;
-            border-left: 5px solid #007bff;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
         }
         footer {
+            background: #333;
+            color: white;
             text-align: center;
             padding: 15px;
-            background: #007bff;
-            color: white;
             margin-top: 20px;
         }
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
+        .redes {
+            margin-top: 10px;
+        }
+        .redes a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="logo.png" alt="TASPhone Logo">
-        <h1>TASPhone</h1>
-        <p><strong>"No lo tires, mejor lo revives"</strong></p>
-    </header>
+<header>
+    <img src="logo.png" alt="TASPhone Logo" class="logo">
+</header>
 
-    <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#ubicacion">Ubicación</a>
-    </nav>
+<nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-    <div class="container">
-        <h2 id="servicios">Nuestros Servicios</h2>
-
-        <div class="service">
-            <h3>🔧 Reparación de dispositivos</h3>
-            <p>Reparamos móviles, ordenadores y otros dispositivos dañados. El precio varía según el tipo de reparación.</p>
-            <ul>
-                <li>Diagnóstico: 5€ por hora.</li>
-                <li>Reparación estándar (pantallas, baterías, puertos): Desde 50€.</li>
-                <li>Limpieza interna completa: 20€.</li>
-            </ul>
-        </div>
-
-        <div class="service">
-            <h3>♻️ Reutilización de piezas</h3>
-            <p>Extraemos piezas de dispositivos dañados y las reutilizamos para nuevas reparaciones.</p>
-            <ul>
-                <li>Tarjetas gráficas, procesadores, memorias RAM y más.</li>
-                <li>Venta de repuestos con hasta un 75% de descuento respecto al precio nuevo.</li>
-            </ul>
-        </div>
-
-        <div class="service">
-            <h3>🔨 Creación de dispositivos reciclados</h3>
-            <p>Armamos dispositivos funcionales con piezas recicladas, ofreciendo calidad y ahorro.</p>
-            <ul>
-                <li>PCs y portátiles reconstruidos desde 150€.</li>
-                <li>Teléfonos reacondicionados desde 100€.</li>
-            </ul>
-        </div>
-
-        <div class="service">
-            <h3>🎨 Accesorios ecológicos</h3>
-            <p>Fabricamos accesorios con materiales reciclados como plásticos y filamentos reutilizados.</p>
-            <ul>
-                <li>Fundas de móviles desde 3€.</li>
-                <li>Cargadores reciclados desde 6€.</li>
-            </ul>
-        </div>
-
-        <h2 id="contacto">Contacto</h2>
-        <p>📞 Teléfono: +34 644 987 321</p>
-        <p>✉️ Correo: tasphone16@gmail.com</p>
-
-        <h2 id="ubicacion">Ubicación</h2>
-        <p>📍 Nos encontramos en: Calle Lapurbide 3, Ansoáin, España.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2937589066036!2d-1.6407873232989445!3d42.829854671090785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50928708e345cb%3A0xa7591934cf7c274!2sC.%20Lapurbide%2C%203%2C%2031013%20Anso%C3%A1in%2C%20Navarra!5e0!3m2!1ses!2ses!4v1709059087614!5m2!1ses!2ses"></iframe>
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicio">
+        <h3>Reparación de Dispositivos Electrónicos</h3>
+        <p>Reparamos móviles, ordenadores y otros aparatos electrónicos. El costo varía según la pieza y la dificultad de la reparación.</p>
     </div>
+    <div class="servicio">
+        <h3>Venta de Dispositivos Restaurados</h3>
+        <p>Ofrecemos móviles y ordenadores restaurados con precios accesibles. Se ha ajustado el costo para reflejar mejor su valor.</p>
+    </div>
+    <div class="servicio">
+        <h3>Accesorios Reciclados</h3>
+        <p>Fundas y cargadores hechos con materiales reciclados, contribuyendo al cuidado del medio ambiente.</p>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 TASPhone - Todos los derechos reservados</p>
-    </footer>
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Ubicación:</strong> Calle Lapurbide 3, Ansoáin</p>
+    <p><strong>Correo Electrónico:</strong> <a href="mailto:tasphone16@gmail.com">tasphone16@gmail.com</a></p>
+    <p><strong>Teléfono:</strong> 948 123 456</p>
+    
+    <h3>Redes Sociales</h3>
+    <div class="redes">
+        <a href="https://www.youtube.com/@TAS-Phone" target="_blank">YouTube</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 TASPhone - "No lo tires, Mejor lo revives".</p>
+</footer>
 
 </body>
 </html>
