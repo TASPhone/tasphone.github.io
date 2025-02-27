@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASPhone - Reparación y Reciclaje Electrónico</title>
+    <title>TASPhone - Repara y Recicla</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,18 +12,18 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: white;
+            background: linear-gradient(to right, #007bff, #ff0000, #008000);
             text-align: center;
             padding: 20px;
-            border-bottom: 5px solid #007bff;
+            color: white;
         }
         header img {
-            width: 180px;
+            width: 150px;
             display: block;
-            margin: 0 auto;
+            margin: 0 auto 10px;
         }
         nav {
-            background: linear-gradient(to right, #007bff, #ff0000, #008000);
+            background: #222;
             padding: 10px;
             text-align: center;
         }
@@ -42,6 +42,14 @@
         }
         h2 {
             color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .service {
+            background: #f0f0f0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #007bff;
         }
         footer {
             text-align: center;
@@ -62,7 +70,7 @@
     <header>
         <img src="logo.png" alt="TASPhone Logo">
         <h1>TASPhone</h1>
-        <p>Reparación y reciclaje de dispositivos electrónicos</p>
+        <p><strong>"No lo tires, mejor lo revives"</strong></p>
     </header>
 
     <nav>
@@ -73,13 +81,43 @@
 
     <div class="container">
         <h2 id="servicios">Nuestros Servicios</h2>
-        <ul>
-            <li>Reparación de teléfonos móviles y otros dispositivos electrónicos.</li>
-            <li>Obtención y reutilización de piezas de segunda mano.</li>
-            <li>Venta de componentes electrónicos reciclados.</li>
-            <li>Creación de dispositivos y pre-builds con materiales reutilizados.</li>
-            <li>Accesorios reciclados como fundas y cargadores.</li>
-        </ul>
+
+        <div class="service">
+            <h3>🔧 Reparación de dispositivos</h3>
+            <p>Reparamos móviles, ordenadores y otros dispositivos dañados. El precio varía según el tipo de reparación.</p>
+            <ul>
+                <li>Diagnóstico: 5€ por hora.</li>
+                <li>Reparación estándar (pantallas, baterías, puertos): Desde 50€.</li>
+                <li>Limpieza interna completa: 20€.</li>
+            </ul>
+        </div>
+
+        <div class="service">
+            <h3>♻️ Reutilización de piezas</h3>
+            <p>Extraemos piezas de dispositivos dañados y las reutilizamos para nuevas reparaciones.</p>
+            <ul>
+                <li>Tarjetas gráficas, procesadores, memorias RAM y más.</li>
+                <li>Venta de repuestos con hasta un 75% de descuento respecto al precio nuevo.</li>
+            </ul>
+        </div>
+
+        <div class="service">
+            <h3>🔨 Creación de dispositivos reciclados</h3>
+            <p>Armamos dispositivos funcionales con piezas recicladas, ofreciendo calidad y ahorro.</p>
+            <ul>
+                <li>PCs y portátiles reconstruidos desde 150€.</li>
+                <li>Teléfonos reacondicionados desde 100€.</li>
+            </ul>
+        </div>
+
+        <div class="service">
+            <h3>🎨 Accesorios ecológicos</h3>
+            <p>Fabricamos accesorios con materiales reciclados como plásticos y filamentos reutilizados.</p>
+            <ul>
+                <li>Fundas de móviles desde 3€.</li>
+                <li>Cargadores reciclados desde 6€.</li>
+            </ul>
+        </div>
 
         <h2 id="contacto">Contacto</h2>
         <p>📞 Teléfono: +34 644 987 321</p>
